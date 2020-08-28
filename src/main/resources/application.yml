@@ -76,13 +76,13 @@ spring:
                     
   datasource:
     url: ${trackingdburl}
-    username: ${trackingdb.user.name}
-    password: ${trackingdb.user.password}
+    username: ${TRACKINGDB_USERNAME}
+    password: ${TRACKINGDB_PASSWORD}
   rabbitmq:
     host: ${rabbitmqhost}
     port: ${rabbitmqport}
-    username: ${rabbitmq.user.name}
-    password: ${rabbitmq.user.password} 
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD} 
 
   application:
     name: "${IMAGE_NAME:template-spring-boot}"
