@@ -17,7 +17,7 @@ credentials:
 
 datasources:
   dburl: "jdbc:mysql://mysql-cargo-dev.bluecargo-dev:3306/trackingmsdb?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=EST&allowPublicKeyRetrieval=true&useSSL=false"
-  mqhost: "rabbitmq-dev-headless"
+  mqhost: "rabbitmq-cargo-dev-headless"
   mqport: "5672"
 
 image:
