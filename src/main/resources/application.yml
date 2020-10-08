@@ -1,6 +1,6 @@
 spring:
-  profiles: 
-    active: local
+  profiles: local
+
   cloud:
     stream:
       bindings:      
@@ -61,7 +61,8 @@ logging:
     console: "%d{YYYY-dd-MM HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %X{X-B3-TraceId:-} ${spring.application.name} %logger{39}.%M %L - %msg%n"
 ---
 spring:
-  profiles: ocp
+  profiles:
+    active: ocp
   cloud:
     stream:
       bindings:      
