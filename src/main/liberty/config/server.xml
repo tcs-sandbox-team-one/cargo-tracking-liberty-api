@@ -17,8 +17,8 @@
     <!-- Declare the jar files for MySQL access through JDBC. -->
     <dataSource id="cargo-tracking-service" jndiName="jdbc/trackingmsdb">
         <jdbcDriver libraryRef="MySQLLib"/>
-        <properties databaseName="trackingmsdb" password="password" portNumber="3306" 
-        serverName="10.242.0.6" serverTimezone="EST" user="trackingmsdb" URL="jdbc:mysql://10.242.0.6:3306/trackingmsdb"/>
+        <properties databaseName="trackingmsdb" password="trackingmsdb" portNumber="3306" 
+        serverName="mysql-cargo-dev" serverTimezone="EST" user="trackingmsdb" URL="jdbc:mysql://mysql-cargo-dev:3306/trackingmsdb?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=EST&useSSL=false&allowPublicKeyRetrieval=true"/>
     </dataSource>
     <library id="MySQLLib">
           <file name="${server.config.dir}/lib/mysql-connector-java-8.0.21.jar"/>
