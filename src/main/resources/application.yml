@@ -18,10 +18,10 @@ spring:
     username: trackingmsdb
     password: trackingmsdb
   rabbitmq:
-    host: localhost
+    host: "rabbitmq-cargo-dev-headless"
     port: 5672
-    username: guest
-    password: guest
+    username: appuser
+    password: passw0rd
 
   application:
     name: "${IMAGE_NAME:template-spring-boot}"
